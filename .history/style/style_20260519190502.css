@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @source "../index.html";
-
 *,
 *::before,
 *::after {
@@ -47,8 +46,4 @@ header {
   display: flex;
   gap: 2rem;
   list-style: none;
-}
-
-main {
-  padding-top: 96px;
 }
