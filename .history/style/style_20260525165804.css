@@ -43,16 +43,9 @@ main {
   padding-top: 96px;
 }
 
-.hero-btn {
+.herobtn {
   font-family: "Rethink Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.hero-text {
-  font-family: "Rethink Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: <weight>;
   font-style: normal;
 }
