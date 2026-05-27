@@ -46,7 +46,7 @@ main {
 .hero-btn {
   font-family: "Rethink Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
   background: linear-gradient(145deg, #f8f5f2, #e8e2d9);
   box-shadow:
@@ -57,6 +57,6 @@ main {
 .hero-text {
   font-family: "Rethink Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
