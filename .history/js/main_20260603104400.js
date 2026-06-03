@@ -1,12 +1,12 @@
 const cards = document.querySelectorAll(".skill-card");
 
 const colors = [
-  "#f59e0b",
-  "#8b5cf6",
-  "#3b82f6",
-  "#10b981",
-  "#ef4444",
-  "#f97316",
+  "#f59e0b", // жовтий
+  "#8b5cf6", // фіолетовий
+  "#3b82f6", // синій
+  "#10b981", // зелений
+  "#ef4444", // червоний
+  "#f97316", // помаранчевий
 ];
 
 cards.forEach((card) => {

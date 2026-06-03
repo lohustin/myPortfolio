@@ -137,4 +137,10 @@ footer {
 .skill-card {
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: #f59e0b;
 }
