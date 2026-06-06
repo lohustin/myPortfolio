@@ -1,8 +1,6 @@
-import "./style/style.css";
-
 const cards = document.querySelectorAll(".skill-card");
-const menuBtn = document.querySelector(".menu__btn");
-const menu = document.querySelector(".menu");
+const burger = document.getElementById("burger");
+const mobileMenu = document.getElementById("mobile-menu");
 
 const colors = [
     "#f59e0b",
@@ -24,6 +22,13 @@ cards.forEach((card) => {
     });
 });
 
-menuBtn.addEventListener("click", () => {
-    menu.classList.toggle("menu--open");
+burger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+
+// Закрити меню при кліку на посилання
+mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+    });
 });

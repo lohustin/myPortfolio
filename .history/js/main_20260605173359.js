@@ -1,8 +1,5 @@
-import "./style/style.css";
-
 const cards = document.querySelectorAll(".skill-card");
-const menuBtn = document.querySelector(".menu__btn");
-const menu = document.querySelector(".menu");
+eMenu = document.getElementById("mobile-menu");
 
 const colors = [
     "#f59e0b",
@@ -22,8 +19,4 @@ cards.forEach((card) => {
     card.addEventListener("mouseleave", () => {
         card.style.borderColor = "transparent";
     });
-});
-
-menuBtn.addEventListener("click", () => {
-    menu.classList.toggle("menu--open");
 });
