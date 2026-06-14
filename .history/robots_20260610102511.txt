@@ -1,0 +1,3 @@
+User-agent: *
+Allow: / 
+Sitemap: https://eclectic-florentine-43a252.netlify.app/sitemap.xml
