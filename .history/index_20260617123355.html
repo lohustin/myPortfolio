@@ -415,24 +415,18 @@
           </div>
         </div>
       </section>
-
       <form
         name="contact"
         netlify
-        class="bg-white shadow shadow-2xl rounded-2xl p-6 max-w-md mx-auto items-center animate mb-16"
+        class="bg-[#FFE5BF] w-100 h-auto rounded-2xl"
         action="/success.html"
       >
-        <div class="grid grid-cols-1 gap-y-8 animate">
-          <input
-            type="hidden"
-            name="form-name"
-            value="contact"
-            class="animate"
-          />
-          <div class="flex flex-col">
-            <label for="form-name" class="animate">Name</label>
+        <div class="grid grid-cols-1">
+          <input type="hidden" name="form-name" value="contact" class="" />
+          <div>
+            <label for="form-name">Name</label>
             <input
-              class="border border-gray-300 rounded-2xl focus:border-indigo-500 focus:outline-none focus:border-2 animate"
+              class="border border-black rounded-2xl"
               type="text"
               name="name"
               placeholder="Drake"
@@ -440,34 +434,31 @@
               id="form-name"
             />
           </div>
-          <div class="flex flex-col animate">
-            <label for="form-email" class="animate">Your email</label>
+          <div>
+            <label for="form-name">Your email</label>
             <input
-              class="border border-gray-300 rounded-2xl focus:border-indigo-500 focus:outline-none focus:border-2 animate"
-              id="form-email"
+              class="border border-black rounded-2xl"
+              id="form-name"
               type="email"
               name="email"
               placeholder="drake@gmail.com"
               required
             />
           </div>
-          <div class="flex flex-col animate">
-            <label for="form-message" class="animate">Message</label>
+          <div class="">
+            <label for="form-name">Message</label>
             <textarea
-              id="form-message"
-              class="border border-gray-300 rounded-2xl focus:border-indigo-500 focus:outline-none focus:border-2 animate"
+              id="form-name"
+              class="border border-black rounded-2xl"
               name="message"
               placeholder="Your message for me"
               required
             ></textarea>
           </div>
 
-          <button type="submit" class="font-bold px-3 py-8 form--btn">
-            Send
-          </button>
+          <button type="submit">Send</button>
         </div>
       </form>
-
       <footer
         class="w-full bg-[#0f172a] text-slate-400 py-12 md:h-[350px] flex flex-col justify-between"
       >

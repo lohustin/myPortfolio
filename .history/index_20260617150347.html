@@ -415,59 +415,61 @@
           </div>
         </div>
       </section>
+      <section>
+        <h2 class="font-bold">You can send message for me</h2>
 
-      <form
-        name="contact"
-        netlify
-        class="bg-white shadow shadow-2xl rounded-2xl p-6 max-w-md mx-auto items-center animate mb-16"
-        action="/success.html"
-      >
-        <div class="grid grid-cols-1 gap-y-8 animate">
-          <input
-            type="hidden"
-            name="form-name"
-            value="contact"
-            class="animate"
-          />
-          <div class="flex flex-col">
-            <label for="form-name" class="animate">Name</label>
+        <form
+          name="contact"
+          netlify
+          class="bg-white shadow shadow-2xl rounded-2xl max-w-md mx-auto items-center p-6 animate mb-16"
+          action="/success.html"
+        >
+          <div class="grid grid-cols-1 gap-y-8 animate">
             <input
-              class="border border-gray-300 rounded-2xl focus:border-indigo-500 focus:outline-none focus:border-2 animate"
-              type="text"
-              name="name"
-              placeholder="Drake"
-              required
-              id="form-name"
+              type="hidden"
+              name="form-name"
+              value="contact"
+              class="animate"
             />
-          </div>
-          <div class="flex flex-col animate">
-            <label for="form-email" class="animate">Your email</label>
-            <input
-              class="border border-gray-300 rounded-2xl focus:border-indigo-500 focus:outline-none focus:border-2 animate"
-              id="form-email"
-              type="email"
-              name="email"
-              placeholder="drake@gmail.com"
-              required
-            />
-          </div>
-          <div class="flex flex-col animate">
-            <label for="form-message" class="animate">Message</label>
-            <textarea
-              id="form-message"
-              class="border border-gray-300 rounded-2xl focus:border-indigo-500 focus:outline-none focus:border-2 animate"
-              name="message"
-              placeholder="Your message for me"
-              required
-            ></textarea>
-          </div>
+            <div class="flex flex-col">
+              <label for="form-name" class="animate">Name</label>
+              <input
+                class="border border-gray-300 rounded-2xl focus:border-indigo-500 focus:outline-none focus:border-2 animate"
+                type="text"
+                name="name"
+                placeholder="Drake"
+                required
+                id="form-name"
+              />
+            </div>
+            <div class="flex flex-col animate">
+              <label for="form-email" class="animate">Your email</label>
+              <input
+                class="border border-gray-300 rounded-2xl focus:border-indigo-500 focus:outline-none focus:border-2 animate"
+                id="form-email"
+                type="email"
+                name="email"
+                placeholder="drake@gmail.com"
+                required
+              />
+            </div>
+            <div class="flex flex-col animate">
+              <label for="form-message" class="animate">Message</label>
+              <textarea
+                id="form-message"
+                class="border border-gray-300 rounded-2xl focus:border-indigo-500 focus:outline-none focus:border-2 animate"
+                name="message"
+                placeholder="Your message for me"
+                required
+              ></textarea>
+            </div>
 
-          <button type="submit" class="font-bold px-3 py-8 form--btn">
-            Send
-          </button>
-        </div>
-      </form>
-
+            <button type="submit" class="font-bold px-3 py-8 form--btn">
+              Send
+            </button>
+          </div>
+        </form>
+      </section>
       <footer
         class="w-full bg-[#0f172a] text-slate-400 py-12 md:h-[350px] flex flex-col justify-between"
       >
