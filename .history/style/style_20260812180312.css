@@ -1,5 +1,9 @@
 @import "tailwindcss";
 @source "../index.html";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   background: linear-gradient(135deg, #f8f5f2 0%, #e8e2d9 50%, #f0ebe3 100%);
@@ -28,7 +32,7 @@ header {
 
 .header-inner {
   grid-column: 2;
-  height: 96px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,7 +50,7 @@ header {
 }
 
 main {
-  padding-top: 96px;
+  padding-top: 64px;
 }
 
 .hero-btn {
@@ -64,6 +68,23 @@ main {
   transition-timing-function: ease;
   transition-delay: 0s;
   transition-property: all;
+  @apply inline-block px-[16px] py-[8px] rounded-2xl text-lg uppercase tracking-wider;
+}
+
+@media (max-width: 640px) {
+  .hero-btn {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-inner {
+    height: 96px;
+  }
+  main {
+    padding-top: 96px;
+  }
 }
 
 .hero-btn {
@@ -111,7 +132,21 @@ main {
     rgb(102, 126, 234) 0%,
     rgb(118, 75, 162) 100%
   );
+  border-radius: 50px;
+  transition: transform 0.2s;
   padding: 5px 14px;
+}
+
+.form--btn {
+  color: white;
+  padding: 8px 14px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: linear-gradient(
+    135deg,
+    rgb(102, 126, 234) 0%,
+    rgb(118, 75, 162) 100%
+  );
   border-radius: 50px;
   transition: transform 0.2s;
 }
@@ -151,14 +186,58 @@ footer {
   animation: 6s ease-in-out 0s infinite normal none running float;
 }
 
-.burger-open .line:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+.nav-link {
+  position: relative;
+  display: inline-block;
 }
 
-.burger-open .line:nth-child(2) {
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #7c3aed;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+@theme {
+  --animate-spin-slow: spin 4s linear infinite;
+}
+
+@theme {
+  --animate-bounce-slow: bounce 20s linear infinite;
+}
+
+.animate,
+.animatexx,
+.animatex {
   opacity: 0;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
-.burger-open .line:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+.animate {
+  transform: translateY(40px);
+}
+
+.animatexx {
+  transform: translateX(-40px);
+}
+
+.animatex {
+  transform: translateX(40px);
+}
+
+.animate.visible,
+.animatexx.visible,
+.animatex.visible {
+  opacity: 1;
+  transform: translate(0);
 }

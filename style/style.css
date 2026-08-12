@@ -32,7 +32,7 @@ header {
 
 .header-inner {
   grid-column: 2;
-  height: 96px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,7 +50,7 @@ header {
 }
 
 main {
-  padding-top: 96px;
+  padding-top: 64px;
 }
 
 .hero-btn {
@@ -75,6 +75,15 @@ main {
   .hero-btn {
     font-size: 1rem;
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-inner {
+    height: 96px;
+  }
+  main {
+    padding-top: 96px;
   }
 }
 
